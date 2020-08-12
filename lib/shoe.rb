@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand unless BRANDS.in
+    BRANDS << brand unless BRANDS.include?(brand)
   end
 s
   def cobble
