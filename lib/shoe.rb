@@ -6,9 +6,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
+    BRANDS << brand unless BRANDS.in
   end
-
+s
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
